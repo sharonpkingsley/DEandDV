@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "\\name{calculateDE}\n\\alias{calculateDE}\n\\title{Calculate expected value of each gene}\n\\description{\nCalcuates the expected expression value for each gene, statistically correcting for dropouts\n}\n\\usage{\ncalculateDE(x, plot=FALSE)\n}\n\\arguments{\n  \\item{x}{Expression matrix for which to calculate expected expression for each gene}\n  \\item{plot}{Display plot of means without dropout correction vs corrected means}\n}\n\\value{\nLarge Numeric of genes and corresponding expected expression values\n}\n\\examples{\nexprs <-as.matrix(read.table(\"matrix.txt\", header=TRUE, sep=\"\\t\", row.names=1,as.is=TRUE))\nexpectedExpression<-calculateDE(exprs)\n}\n\n",
+    "created" : 1525850449811.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "128047876",
+    "id" : "25AA9E54",
+    "lastKnownWriteTime" : 1525852207,
+    "last_content_update" : 1525852207535,
+    "path" : "~/DEandDV/man/calculateDE.Rd",
+    "project_path" : "man/calculateDE.Rd",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_doc"
+}

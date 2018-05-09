@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "\\name{calculateDV}\n\\alias{calculateDV}\n\\title{Calculate variance of each gene}\n\\description{\nCalcuates the variance for each gene, statistically correcting for dropouts\n}\n\\usage{\ncalculateDV(x, plot=FALSE)\n}\n\\arguments{\n  \\item{x}{Expression matrix for which to calculate variance for each gene}\n  \\item{plot}{Display plot of variance without dropout correction vs corrected variance}\n}\n\\value{\nLarge Numeric of genes and corresponding variance values\n}\n\\examples{\nexprs <-as.matrix(read.table(\"matrix.txt\", header=TRUE, sep=\"\\t\", row.names=1,as.is=TRUE))\nvariances<-calculateDV(exprs)\n}\n\n",
+    "created" : 1525852224963.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "677803054",
+    "id" : "F798E053",
+    "lastKnownWriteTime" : 1525852357,
+    "last_content_update" : 1525852357429,
+    "path" : "~/DEandDV/man/calculateDV.Rd",
+    "project_path" : "man/calculateDV.Rd",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_doc"
+}
