@@ -1,4 +1,15 @@
 calculateDEandDV<- function(x, labels){
+  input<-x
+
+  # check labels matches matrix columns
+  if(length(labels)!=ncol(x)) {
+    stop("labels must be same size as number of samples");
+  }
+  # check valid labels
+  check<-(labels%in%c(0,1))
+  if(!all(check==TRUE)){
+    stop("labels must contain values 0 or 1");
+  }
 
   ##iniatialize matrices for the 2 groups of cells
   exprs1<-matrix(nrow=nrow(x), ncol = 0)
@@ -181,6 +192,8 @@ calculateDEandDV<- function(x, labels){
     toreturn[row,"LFC"]<-m2[row]-m1[row]
 
   }
+
+  rownames(toreturn)<-rownames(input)
 
   return(toreturn)
 
