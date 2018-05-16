@@ -1,11 +1,9 @@
 Package: DEandDV
-Type: Package
-Title: Conduct Differential Expression and Differential Varibiliaty Anlaysis
+Title: Conducts DE and DV analyses on scRNA-seq data
 Version: 0.1.0
-Author: Sharon Pandian Kingsley
-Maintainer: Sharon Pandian Kingsley
-Description: Conducts DE and DV analysis on scRNA sequencing data.
-    Alleviates the effects of dropout with statistical methods
+Authors@R: person("Sharon", "Pandian Kingsley", email = "sharonpkingsley@hotmail.com",
+                  role = c("aut","cre"))
+Description: Conducts Differential Expression and Differential Variability analyses while alleviating the effects of dropouts.
+Depends: R (>= 3.1.0)
 License: MIT
-Encoding: UTF-8
 LazyData: true
