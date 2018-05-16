@@ -152,6 +152,9 @@ calculateDEandDV<- function(x, labels){
   s2<-s_sd
   n2<-ncol(exprs)
 
+  #variance to standard deviation
+  s1<-sqrt(s1)
+  s2<-sqrt(s2)
 
   #T-test function
   t.test2 <- function(m1,m2,s1,s2,n1,n2)
